@@ -1,15 +1,15 @@
 {
-  "name": "EthNotice",
-  "description": "notification service for eth address",
+  "name": "EthPRESSO",
+  "description": "Notification/Messaging service for evm-address",
   "version": "0.0.1",
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html"
   },
   "icons": {
-    "16": "src/icons/icon16.png",
-    "48": "src/icons/icon48.png",
-    "128": "src/icons/icon128.png"
+    "16": "src/assets/icon16.png",
+    "48": "src/assets/icon48.png",
+    "128": "src/assets/icon128.png"
   },
   "commands": {},
   "permissions": ["tabs", "notifications"]

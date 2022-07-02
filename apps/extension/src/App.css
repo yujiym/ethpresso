@@ -1,4 +1,26 @@
-.App {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+:root {
+  --c-white: #fff;
+  --c-black: #000;
+  --c-primary: #5e00e5;
+  --c-secondary: #f4f1ff;
+}
+
+body {
+  @apply min-h-screen overflow-y-auto overflow-x-hidden;
+  width: 320px;
+  background: var(--c-secondary);
+}
+
+.font-title {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -39,4 +61,4 @@
 
 button {
   font-size: calc(10px + 2vmin);
-}
+} */

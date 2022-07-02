@@ -3,9 +3,14 @@
 ## EthPRESSO
 
 EthPRESSO is messaging/notification layer for evm-address.
-Initial release is a Chrome extension works with metamask.
+Initial release is a chrome extension works with metamask.
 
 <img src="./assets/image.jpg" alt="ethpresso demo" width="400"/>
+
+- Auth with browser injected wallet (Metamsk)
+- Message like telegram using evm-address
+- Notification when updates
+- Group messaging with multisig-wallet
 
 ### Problem it is solving
 

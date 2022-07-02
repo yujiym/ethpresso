@@ -1,45 +1,33 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useConnect } from "wagmi";
+import logo from "./assets/logo.svg";
+import metamask from "./assets/metamask-fox.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const { connect } = useConnect();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+    <div className="min-h-screen flex justify-center items-center">
+      <main>
+        <img src={logo} alt="EthPRESSO" className="mx-auto" width="128" />
+        <p className="text-gray-700 mt-4 mb-12 text-center text-sm">
+          messaging/notification
+          <br />
+          for evm-address
         </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+        <button
+          type="button"
+          className="flex border-primary text-primary border-2 py-3 px-6 mx-1 w-full rounded-full font-title hover:bg-primary hover:text-white"
+          onClick={() => {
+            console.log("aa");
+          }}
+        >
+          Signin with
+          <img src={metamask} height={24} width={24} className="ml-3" />
+        </button>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
